@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+  --Bright-Orange: hsl(31, 77%, 52%);
+  --Dark-Cyan: hsl(184, 100%, 22%);
+  --Very-Dark-Cyan: hsl(179, 100%, 13%);
+  --font-size-400: "Lexend Deca", sans-serif;
+  --font-size-700: "Big Shoulders Display";
+  --transparent-color: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+}
+body {
+  font-size: 1.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.card-1,
+.card-2,
+.card-3 {
+  padding: 40px;
+}
+.card-1 div.heading,
+.card-2 div.heading,
+.card-3 div.heading {
+  color: var(--very-light-grey);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  margin-top: 3rem;
+}
+.card-1 div.Para,
+.card-2 div.Para,
+.card-3 div.Para {
+  color: var(--very-light-grey);
+  line-height: 2.8rem;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 3rem;
+  height: 20rem;
+}
+.card-1 div.button,
+.card-2 div.button,
+.card-3 div.button {
+  margin-top: 5rem;
+}
+div.button > a {
+  text-decoration: none;
+  background-color: var(--very-light-grey);
+  padding: 20px;
+  border-radius: 20px;
+  width: 13rem;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+.card-1 div.button > a {
+  color: var(--Bright-Orange);
+}
+.card-2 div.button > a {
+  color: var(--Dark-Cyan);
+}
+.card-3 div.button > a {
+  color: var(--Very-Dark-Cyan);
+}
+.card-1 {
+  background-color: var(--Bright-Orange);
+  border-radius: 10px 0 0 10px;
+}
+.card-2 {
+  background-color: var(--Dark-Cyan);
+}
+.card-3 {
+  background-color: var(--Very-Dark-Cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  body {
+    height: 150rem;
+    margin: 5rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(80vw + 0.6696vw);
+    height: 100vh;
+  }
+  .card-1 div.Para,
+  .card-2 div.Para,
+  .card-3 div.Para {
+    height: 150px;
+  }
+  .card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 60vw;
+  }
+
+  .card-1 div.Para,
+  .card-2 div.Para,
+  .card-3 div.Para {
+    height: 150px;
+  }
+}
