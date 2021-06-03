@@ -40,8 +40,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/vinod2505IT/Frontend-Mentors/tree/master/Responsive%20Card%20Using%20CSS%20FlexBox](https://your-solution-url.com)
+- Live Site URL: [https://vinod2505it.github.io/Frontend-Mentors/Responsive%20Card%20Using%20CSS%20FlexBox/](https://your-live-site-url.com)
 
 ## My process
 
