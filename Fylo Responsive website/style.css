@@ -22,7 +22,7 @@
 html {
   font-family: "open-sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: var(--main-bg);
@@ -184,10 +184,10 @@ main {
   margin-right: 5px;
 }
 .profile-detail h3 {
-  font-size: 10px;
+  font-size: 16px;
 }
 .profile-detail p {
-  font-size: 8px;
+  font-size: 14px;
 }
 
 /* sign up */
@@ -288,4 +288,348 @@ footer {
 }
 .social-icons i {
   font-size: 30px;
+}
+
+/* Media Queries  */
+@media screen and (max-width: 1030px) {
+  html {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .nav {
+    padding: 60px 40px;
+  }
+  .brand-logo img {
+    width: 150px;
+    height: 40px;
+  }
+  /* Hero section */
+  .hero img {
+    width: 600px;
+    height: 450px;
+  }
+  .hero h2 {
+    width: 600px;
+    margin: 30px;
+    z-index: 2;
+  }
+  .hero p {
+    width: 550px;
+    font-size: 14px;
+    padding: 0 30px;
+    z-index: 2;
+  }
+  .cta {
+    width: 242px;
+    padding: 18px 0;
+    z-index: 2;
+  }
+  /* features */
+  .features {
+    padding: 0 80px;
+  }
+  /* Extra Description */
+  .extra-description {
+    padding: 0 50px;
+  }
+  .img-box img {
+    height: 230px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 80px 20px;
+    gap: 20px;
+  }
+  .testimonial:first-child:before {
+    left: 4px;
+  }
+  .profile-detail h3 {
+    font-size: 12px;
+  }
+  .profile-detail p {
+    font-size: 10px;
+  }
+  .signup {
+    padding: 60px 50px;
+    width: 500px;
+    bottom: -195px;
+  }
+  .signup p {
+    margin-bottom: 30px;
+  }
+  form {
+    flex-direction: column;
+  }
+  input[type="email"],
+  input[type="submit"] {
+    width: 380px;
+    margin: 0 0 25px 0;
+  }
+  footer {
+    grid-template-columns: 4fr 3fr 2fr;
+    column-gap: 10px;
+    row-gap: 20px;
+
+    padding: 250px 30px 30px 30px;
+    grid-template-areas:
+      "logo . . "
+      "location contact links"
+      ". more-links social-icons";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    padding: 24px 28px;
+  }
+  .nav-items :not(:last-child) {
+    padding-right: 23px;
+  }
+  .brand-logo img {
+    width: 102px;
+    height: 34px;
+  }
+  .hero img {
+    width: 400px;
+    height: 325px;
+  }
+  .hero h2 {
+    width: 302px;
+    margin: 23px;
+    z-index: 2;
+  }
+  .hero p {
+    width: 292px;
+    font-size: 12px;
+    padding: 0 23px;
+    z-index: 2;
+  }
+  .cta {
+    width: 142px;
+    padding: 18px 0;
+    z-index: 2;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    gap: 67px 0px;
+    padding: 0px 38px;
+    margin: 100px 0px;
+  }
+  .extra-description {
+    flex-direction: column;
+    padding: 0 23px;
+  }
+  .img-box img {
+    height: 315px;
+    margin: 0 0 52px 0;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 150px 22px;
+  }
+  .testimonial:first-child:before {
+    left: 4px;
+  }
+  .signup {
+    padding: 48px 15px;
+    bottom: -175px;
+    width: 350px;
+  }
+  .signup p {
+    margin-bottom: 20px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+  input[type="email"],
+  input[type="submit"] {
+    width: 280px;
+    margin: 0 0 25px 0;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    padding: 280px 27px 42px 27px;
+
+    column-gap: 0;
+    row-gap: 20px;
+    grid-template-areas:
+      "logo"
+      "location"
+      "contact"
+      "links"
+      "more-links"
+      "social-icons";
+  }
+  .social-icons i {
+    font-size: 28px;
+  }
+  .fa-facebook {
+    justify-self: end;
+  }
+  .fa-twitter {
+    justify-self: center;
+  }
+  .fa-instagram {
+    justify-self: start;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hero {
+    background: var(--intro-email-bg) url("images/bg-curvy-mobile.svg") center
+      no-repeat;
+    background-size: 100% 130px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero:after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-bg);
+    z-index: 1;
+    width: 100%;
+    height: 285px;
+    bottom: 0px;
+  }
+
+  .hero img {
+    width: 302px;
+    height: 225px;
+  }
+  .img-box img {
+    height: 280px;
+    margin: 0 0 52px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  /* nav */
+  .nav {
+    padding: 24px 28px;
+  }
+  .nav-items :not(:last-child) {
+    padding-right: 23px;
+  }
+  .brand-logo img {
+    width: 82px;
+    height: 24px;
+  }
+  /* Hero section */
+  .hero {
+    background: var(--intro-email-bg) url("images/bg-curvy-mobile.svg") center
+      no-repeat;
+    background-size: 100% 130px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero:after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-bg);
+    z-index: 1;
+    width: 100%;
+    height: 290px;
+    bottom: 0px;
+  }
+  .hero img {
+    width: 302px;
+    height: 225px;
+  }
+  .hero h2 {
+    width: 302px;
+    margin: 23px;
+    z-index: 2;
+  }
+  .hero p {
+    width: 292px;
+    font-size: 12px;
+    padding: 0 23px;
+    z-index: 2;
+  }
+  .cta {
+    width: 242px;
+    padding: 18px 0;
+    z-index: 2;
+  }
+  /* Features */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 87px 0px;
+    padding: 0px 38px;
+    margin: 100px 0px;
+  }
+  /* Extra Description */
+  .extra-description {
+    flex-direction: column;
+    padding: 0 23px;
+  }
+  .img-box img {
+    height: 215px;
+    margin: 0 0 52px 0;
+  }
+
+  /* testimonial */
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 150px 22px;
+  }
+  .testimonial:first-child:before {
+    left: 4px;
+  }
+
+  /* Sign-up */
+  .signup {
+    padding: 48px 25px;
+    bottom: -175px;
+  }
+  .signup p {
+    margin-bottom: 20px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+  input[type="email"],
+  input[type="submit"] {
+    width: 280px;
+    margin: 0 0 25px 0;
+  }
+
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr;
+    padding: 280px 27px 42px 27px;
+    width: 100%;
+    column-gap: 0;
+    row-gap: 20px;
+    grid-template-areas:
+      "logo"
+      "location"
+      "contact"
+      "links"
+      "more-links"
+      "social-icons";
+  }
+  .social-icons i {
+    font-size: 28px;
+  }
+  .fa-facebook {
+    justify-self: end;
+  }
+  .fa-twitter {
+    justify-self: center;
+  }
+  .fa-instagram {
+    justify-self: start;
+  }
 }
